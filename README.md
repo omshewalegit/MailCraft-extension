@@ -4,7 +4,7 @@
 
 # MailCraft Extension
 
-**AI-powered email reply generator for Gmail**
+**AI-powered email reply generator for Gmail**  
 Built with Chrome Manifest V3 · Google Gemini AI
 
 [![Chrome](https://img.shields.io/badge/Chrome-Manifest%20V3-4285F4?style=flat-square&logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/)
@@ -32,6 +32,7 @@ No copy-pasting. No tab switching. Just click **Give Reply** and you're done.
 [**Download ZIP**](https://github.com/omshewalegit/MailCraft-extension/archive/refs/heads/main.zip)
 
 Or clone:
+
 ```bash
 git clone https://github.com/omshewalegit/MailCraft-extension.git
 ```
@@ -64,6 +65,8 @@ git clone https://github.com/omshewalegit/MailCraft-extension.git
 ---
 
 ## 🖼️ How It Works
+
+```
 User opens email → clicks Reply
 │
 ▼
@@ -80,13 +83,14 @@ Gemini AI generates reply
 │
 ▼
 Reply inserted into Gmail compose box
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
 | Component | Technology |
-|-----------|-----------|
+|-----------|------------|
 | Extension | Chrome Manifest V3 |
 | Content Script | Vanilla JavaScript |
 | Background Worker | Service Worker |
@@ -106,7 +110,7 @@ Reply inserted into Gmail compose box
 
 ## 🌐 Web App
 
-Try the standalone web version:
+Try the standalone web version:  
 👉 **[mail-craft-frontend.vercel.app](https://mail-craft-frontend.vercel.app)**
 
 ---
