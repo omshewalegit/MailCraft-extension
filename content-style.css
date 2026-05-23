@@ -1,0 +1,8 @@
+#mailcraft-reply-btn {
+  font-family: 'DM Sans', sans-serif !important;
+  letter-spacing: 0.01em !important;
+}
+#mailcraft-reply-btn:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.4) !important;
+}
