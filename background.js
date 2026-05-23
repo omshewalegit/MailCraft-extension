@@ -8,7 +8,7 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (msg.type === "GENERATE_REPLY") {
   fetch(
-    "https://mailcraft-backend-production.up.railway.app/api/email/generate",
+    "https://mailcraft-backend-oqh4.onrender.com/api/email/generate",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
