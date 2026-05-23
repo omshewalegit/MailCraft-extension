@@ -1,5 +1,4 @@
-const API_URL =
-  "https://mailcraft-backend-production.up.railway.app/api/email/generate";
+const API_URL = "https://mailcraft-backend-oqh4.onrender.com/api/email/generate";
 
 const style = document.createElement("style");
 style.textContent = `@keyframes mailcraft-spin { to { transform: rotate(360deg); } }`;
