@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:8080/api/email/generate";
+const API_URL =
+  "https://mailcraft-backend-production.up.railway.app/api/email/generate";
 
 const style = document.createElement("style");
 style.textContent = `@keyframes mailcraft-spin { to { transform: rotate(360deg); } }`;
@@ -116,9 +117,6 @@ function injectButtonIfNeeded() {
     observer.observe(document.body, { childList: true, subtree: true });
   });
 }
-
-
-
 
 async function handleClick(btn) {
   const composeBox = document.querySelector(

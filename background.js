@@ -7,14 +7,17 @@ chrome.runtime.onInstalled.addListener(() => {
 // Handle fetch from content script (bypasses CORS/loopback block)
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (msg.type === "GENERATE_REPLY") {
-    fetch("http://localhost:8080/api/email/generate", {
+  fetch(
+    "https://mailcraft-backend-production.up.railway.app/api/email/generate",
+    {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ emailContent: msg.emailContent, tone: msg.tone }),
-    })
-      .then((res) => res.text())
-      .then((reply) => sendResponse({ reply }))
-      .catch((err) => sendResponse({ error: err.message }));
+    },
+  )
+    .then((res) => res.text())
+    .then((reply) => sendResponse({ reply }))
+    .catch((err) => sendResponse({ error: err.message }));
 
     return true; // Required to keep channel open for async response
   }
