@@ -9,11 +9,7 @@ Built with Chrome Manifest V3 · Google Gemini AI
 [![Gemini AI](https://img.shields.io/badge/Gemini-2.5%20Flash-8B5CF6?style=flat-square&logo=google&logoColor=white)](https://ai.google.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
-<br/>
 
-![MailCraft Banner](assets/banner.png)
-
-</div>
 
 ---
 
